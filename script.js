@@ -1,6 +1,7 @@
 const mealList = document.getElementById("meal");
 
 // most popular meal pemanent in local storage
+
 function getPopular(){
   localStorage.setItem('popular' , '[]') ; 
   var popular_data = JSON.parse(localStorage.getItem('popular')); 
@@ -9,10 +10,10 @@ function getPopular(){
   popular_data.push(52806) ; 
   localStorage.setItem('popular' , JSON.stringify(popular_data)) ; 
 }
-
 getPopular() ; 
 
-// show most popular meal on the page
+// show most popular meal on the page 
+
 let popularData = JSON.parse(localStorage.getItem('popular')) ; 
 let tittle = document.getElementById('tittle') ; 
    tittle.innerText = " Most Popular Meal :- " ; 
@@ -48,8 +49,6 @@ let tittle = document.getElementById('tittle') ;
     
       });
 
-
-
 // your search meal result ... 
 // get meal list
 
@@ -73,7 +72,7 @@ form.addEventListener('submit' , function(e){
         <div class="meal-item" data-id="${meal.idMeal}" >
             <div class="meal-img">
                 <a href="./details/detail.html" target="_blank" >
-                    <img src="${meal.strMealThumb}" alt="${meal.strMeal}.jpg"  onclick="anchortag(this)" id="${meal.idMeal}" />
+                    <img src="${meal.strMealThumb}" alt="${meal.strMeal}.jpg"  onclick="storeFav(this)" id="${meal.idMeal}" />
                 </a>
             </div>
             <div class="meal-name">
@@ -93,13 +92,14 @@ form.addEventListener('submit' , function(e){
 })
 
 
-function anchortag(img) {
+//  this function store meal id  into local storage  for showing details on details page. 
+function storeFav(img) {
   localStorage.setItem("mealId" , img.id) ; 
   // alert(img.id) ; 
 }
 
 
-
+//  this funcion change button and store all the fav meal id into local storage . 
 
 function addFav(btn){
     let value = btn.getAttribute('value') ; 
@@ -120,6 +120,7 @@ function addFav(btn){
        
 }
 
+//  this function get all the  local data on page load . 
 function fav(btn){
   console.log(btn);
   console.log("favourite");
