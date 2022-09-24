@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>searchAuto</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <h2>Meal App</h2>
+                </li>
+
+                <li>
+                   <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="./fav/fav.html" target="_blank">favourite</a>
+                </li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <div id="container">
+        <h2  id=tittle-head>
+            Tell us your fav Meal !
+        </h2>
+
+        <form autocomplete="off" id="form">
+            <input type="text" name="search-input" id="search-input" placeholder="search your meal..." />
+            <button type="submit" id="search-btn"><i class="fas fa-search"></i></button>
+            <div id="result"></div>
+        </form>
+
+
+        <div class="meal-result">
+            <h3 id="tittle"> Most Popular </h3>
+            <div id="meal">
+                <!-- meal Item -->
+                
+    
+
+                <!-- end meal item -->
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

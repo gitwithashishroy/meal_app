@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  
+  header{
+      background-color: lightblue;
+  }
+  
+  header nav h2{
+      padding: 10px ;
+    
+  }
+  
+  header nav ul{
+    display: flex ;
+    align-items: center;
+  }
+  
+  
+  header nav ul li{
+    list-style-type: none;
+    text-align: center;  
+  }
+  
+  header nav ul li a{
+    margin-left: 10vw;
+    text-decoration: none ;
+    font-size: 1.2rem;
+  }
+  
+  #container {
+      min-height: 100vh;
+      max-width: 1280px;
+      margin: 0 auto;
+      text-align: center;
+      /* padding: 0 2rem 0 2rem; */
+  }
+  
+  .meal-details-content{
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+.meal-tittle{
+    letter-spacing: 1px ;
+    padding-bottom: 1rem;
+}
+
+.meal-category{
+    background-color: pink;
+    width: 200px ; 
+    font-weight: 600; 
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+    font-size: 20px;
+    margin: auto;
+}
+
+.instruct-img{
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-around;
+}  
+
+.meal-instruct{
+    width: 500px;
+    font-size: 19px;
+}
+
+.meal-instruct p{
+  margin: 2rem;
+}
+
+  
+.meal-img img{
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+}
+  
