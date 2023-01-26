@@ -1,17 +1,16 @@
+let mealDetail = document.getElementById("container");
 
-let mealDetail = document.getElementById('container') ; 
-
-
-function getDetails(){
-    let mealId = localStorage.getItem('mealId') ; 
-    console.log(mealId);
-    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`)
+function getDetails() {
+  let mealId = localStorage.getItem("mealId");
+  console.log(mealId);
+  fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`)
     .then((response) => response.json())
-    .then((data)=>{ 
-        let html = "";
-        if (data.meals) {
-          data.meals.forEach((meal) => {
-            html += `
+    .then((data) => {
+      console.log(data);
+      let html = "";
+      if (data.meals) {
+        data.meals.forEach((meal) => {
+          html += `
             <div class="meal-details-content">
             <h2 class="meal-tittle">${meal.strMeal}</h2>
             <p class="meal-category">${meal.strCategory}</p>
@@ -30,14 +29,13 @@ function getDetails(){
              
           </div>
           `;
-          });
+        });
         // console.log(data);
-    }
-     mealDetail.innerHTML = html ; 
-   });
+      }
+      mealDetail.innerHTML = html;
+    });
 
-   localStorage.removeItem('mealId') ; 
+  localStorage.removeItem("mealId");
 }
 
-getDetails() ; 
-
+getDetails();
