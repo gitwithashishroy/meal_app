@@ -45,3 +45,9 @@ User can add meal to favourite and can see details of meal .
 
 ![Screenshot 2023-01-26 at 2 41 02 PM](https://user-images.githubusercontent.com/109090729/214798849-d9b4e415-56ea-4b07-9291-27302a122de4.png)
 
+####  Meal Details Page
+
+![Screenshot 2023-01-26 at 5 38 31 PM](https://user-images.githubusercontent.com/109090729/214840132-4f72cbf5-9de6-468a-94ce-15e4e3f545d1.png)
+
+
+
