@@ -39,10 +39,9 @@ User can add meal to favourite and can see details of meal .
 ## Screenshots
 
 #### home page 
-![App Screenshot](https://github.com/gitwithashishroy/meal_app/blob/main/img/home.png?raw=true)
+![Screenshot 2023-01-26 at 2 42 05 PM](https://user-images.githubusercontent.com/109090729/214798709-0b5f6628-5b67-4cfc-a6e6-20fe29c52fb3.png)
 
-#### Favourite page 
-![App Screenshot](https://github.com/gitwithashishroy/meal_app/blob/main/img/favmeal.png?raw=true)
+#### Search page 
 
-#### meal detail page 
-![App Screenshot](https://github.com/gitwithashishroy/meal_app/blob/main/img/detail.png?raw=true)
+![Screenshot 2023-01-26 at 2 41 02 PM](https://user-images.githubusercontent.com/109090729/214798849-d9b4e415-56ea-4b07-9291-27302a122de4.png)
+
